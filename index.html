@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Urmo Tankler, a technology enthusiast showcasing projects and blog posts.">
+    <meta name="keywords" content="Urmo Tankler, portfolio, technology, projects, blog">
+    <title>Urmo Tankler - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Language Selection -->
+    <div class="language-switch" aria-label="Language Selection">
+        <button onclick="setLanguage('en')" aria-label="Switch to English">EN</button>
+        <button onclick="setLanguage('et')" aria-label="Switch to Estonian">ET</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" data-lang-en="Home" data-lang-et="Kodu">Home</a></li>
+            <li><a href="#about" data-lang-en="About" data-lang-et="Minust">About</a></li>
+            <li><a href="#portfolio" data-lang-en="Portfolio" data-lang-et="Portfell">Portfolio</a></li>
+            <li><a href="#blog" data-lang-en="Blog" data-lang-et="Blogi">Blog</a></li>
+            <li><a href="#contact" data-lang-en="Contact" data-lang-et="Võta Ühendust">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 data-lang-en="Welcome to my professional portfolio." data-lang-et="Tere tulemast minu professionaalsesse portfelli.">Welcome to my professional portfolio.</h1>
+        <p data-lang-en="I am Urmo Tankler, a 15-year-old passionate about technology." data-lang-et="Ma olen Urmo Tankler, 15-aastane tehnoloogia entusiast.">I am Urmo Tankler, a 15-year-old passionate about technology.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 data-lang-en="About Me" data-lang-et="Minust">About Me</h2>
+        <p data-lang-en="I am a young enthusiast with a growing interest in technology. Here you can find my projects and experiences." data-lang-et="Olen noor entusiast, kellel on kasvav huvi tehnoloogia vastu. Siit leiate minu projektid ja kogemused.">I am a young enthusiast with a growing interest in technology and design. Here you can find my projects and experiences.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 data-lang-en="Portfolio" data-lang-et="Portfell">Portfolio</h2>
+        <div class="portfolio-items">
+            <!-- Urmoit Cheat Project -->
+            <div class="portfolio-item">
+                <img src="photos/Kuvatõmmis 2024-08-31 191431.png" alt="Urmoit Cheat">
+                <h3 data-lang-en="Urmoit Cheat" data-lang-et="Urmoit Cheat">Urmoit Cheat</h3>
+                <p data-lang-en="A custom cheat tool designed for enhancing gameplay experiences." data-lang-et="Kohandatud petmisvahend mängukogemuse parandamiseks.">A custom cheat tool designed for enhancing gameplay experiences.</p>
+            </div>
+            <!-- CPS Scripts Project -->
+            <div class="portfolio-item">
+                <img src="photos/Kuvatõmmis 2024-08-31 191727.png" alt="CPS Scripts">
+                <h3 data-lang-en="CPS Scripts" data-lang-et="CPS Script Lehekülk">CPS Scripts</h3>
+                <p data-lang-en="Scripts for automating clicks and improving click speed in various games." data-lang-et="Skriptid, mis automatiseerivad klikke ja parandavad klõpsamise kiirus erinevates mängudes.">Scripts for automating clicks and improving click speed in various games.</p>
+                <p data-lang-en="Website Link: https://urmoit.github.io/CPS-Scripts/" data-lang-et="Lehekülk on: https://urmoit.github.io/CPS-Scripts/">Website Link: <a href="https://urmoit.github.io/CPS-Scripts/" target="_blank" rel="noopener noreferrer">https://urmoit.github.io/CPS-Scripts/</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2 data-lang-en="Blog" data-lang-et="Blogi">Blog</h2>
+        <article class="blog-post">
+            <h3 data-lang-en="Urmoit Cheat Launch Day" data-lang-et="Urmoit Cheat Käivitamise Päev">UrmoIT Cheat Launch Day</h3>
+            <p data-lang-en="Today marks a significant milestone as we launch Urmoit Cheat! This tool has been in development for several months, and I’m excited to share it with the community. We’ve worked hard to ensure it enhances gameplay without compromising on safety. Stay tuned for updates and feel free to reach out with any feedback or questions!" data-lang-et="Täna tähistame olulist verstaposti, käivitades Urmoit Petmise! See tööriist on olnud arenduses mitme kuu jooksul ja olen põnevil, et saan selle kogukonnaga jagada. Oleme teinud kõvasti tööd, et tagada mängukogemuse parandamine ilma ohutust kompromiteerimata. Jälgige värskendusi ja andke meile julgelt teada, kui teil on tagasisidet või küsimusi!">Today marks a significant milestone as we launch Urmoit Cheat! This tool has been in development for several months, and I’m excited to share it with the community. We’ve worked hard to ensure it enhances gameplay without compromising on safety. Stay tuned for updates and feel free to reach out with any feedback or questions!</p>
+            <div class="blog-meta">
+                <a href="UrmoitCheatLaunchDay.html" class="read-more" data-lang-en="Read Full Blog" data-lang-et="Loe Täispikka Blogi">Read Full Blog</a>
+                <span class="blog-date" data-lang-en="August 12, 2024" data-lang-et="12. august 2024">August 12, 2024</span>
+            </div>
+        </article>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 data-lang-en="Contact Me" data-lang-et="Võta Ühendust">Contact Me</h2>
+        <form action="your-backend-url" method="post">
+            <label for="name" data-lang-en="Name" data-lang-et="Nimi">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email" data-lang-en="Email" data-lang-et="E-post">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message" data-lang-en="Message" data-lang-et="Sõnum">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" data-lang-en="Send Message" data-lang-et="Saada Sõnum">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Urmoit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
